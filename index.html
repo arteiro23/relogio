@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Analógico com Som</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div id="clock" class="clock">
+            <div id="hour" class="hand hour"></div>
+            <div id="minute" class="hand minute"></div>
+            <div id="second" class="hand second"></div>
+
+            <div class="numbers">
+                <span class="number" style="transform: rotate(0deg) translateY(-110px)">12</span>
+                <span class="number" style="transform: rotate(30deg) translateY(-110px)">1</span>
+                <span class="number" style="transform: rotate(60deg) translateY(-110px)">2</span>
+                <span class="number" style="transform: rotate(90deg) translateY(-110px)">3</span>
+                <span class="number" style="transform: rotate(120deg) translateY(-110px)">4</span>
+                <span class="number" style="transform: rotate(150deg) translateY(-110px)">5</span>
+                <span class="number" style="transform: rotate(180deg) translateY(-110px)">6</span>
+                <span class="number" style="transform: rotate(210deg) translateY(-110px)">7</span>
+                <span class="number" style="transform: rotate(240deg) translateY(-110px)">8</span>
+                <span class="number" style="transform: rotate(270deg) translateY(-110px)">9</span>
+                <span class="number" style="transform: rotate(300deg) translateY(-110px)">10</span>
+                <span class="number" style="transform: rotate(330deg) translateY(-110px)">11</span>
+            </div>
+        </div>
+        <button id="toggle-sound" class="sound-button">Ligar/Desligar Som</button>
+    </div>
+
+    <audio id="clock-sound" src="alarm-no3-14864.mp3" preload="auto"></audio>
+    <audio id="alarm-sound" src="cyber-alarms-synthesized-116358.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
